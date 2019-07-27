@@ -1,0 +1,600 @@
+/* COLOR VARIABLES */
+:root {
+    --blue: #1D3C50;
+    --dark: #252323;
+    --light: #f5f1ed;
+    --silver: #70798c;
+    --yellow: #A58748;
+    --lighterdark: #383737;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'IndieFlower';
+    font-style: normal;
+    src: url(../fonts/IndieFlower-Regular.ttf);
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    font-family: Lato;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* To make the footer stick at the bottom */
+article {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+}
+
+/* LOGO */
+.logo {
+    display: inline-block;
+}
+.logo-image{
+    width: 150px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:var(--light);
+    color:var(--dark);
+    border-bottom: 2px solid var(--silver);
+}
+.navbar-links {
+    display: none;
+    width: 100%;
+}
+.navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar-links li {
+    list-style: none;
+    text-align: center;
+}
+.navbar-links li a {
+    padding: 2rem 1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: block;
+    font-weight: 600;
+    border-bottom: 2px solid var(--silver);
+}
+
+label {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 30px;
+    width: 30px;
+}
+ 
+#toggle:checked + .navbar-links {
+    display: block;
+}
+
+/* HIDE CHECKBOX TOGGGLE*/
+input[type="checkbox"] {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/* FRONT PAGE */
+/* BANNER */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--dark) url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    border-bottom: 3px solid var(--silver);
+}
+#banner h1{
+    font-weight: bold;
+    font-family: IndieFlower;
+    font-size: 35px;
+    color: var(--yellow);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+}
+#banner p{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark);
+}
+#banner p span{
+    background-color: var(--silver);
+}
+#banner .content-wrap {
+    padding: 0 2em;
+}
+.banner-btn {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--yellow);
+    border: 1px solid var(--dark);
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: .5em 0;
+    font-weight: 600;
+}
+.banner-btn:hover {
+    background: var(--yellow);
+    color: var(--blue);
+}
+
+/* MAIN */
+
+/* EXPLORE SECTION */
+#section-explore {
+    padding: 1em 1em 1em;
+    background-color: var(--light);
+}
+
+#section-explore .section-title{
+    color: var(--dark);
+    text-align: center;
+    font-weight: 600;
+    font-family: IndieFlower;
+    font-size: 25px;
+}
+
+#section-explore .card-title{
+    color: var(--yellow);
+    text-align: center;
+}
+#section-explore ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#section-explore li{
+    margin-bottom: 1em;
+    background: var(--blue);
+    color: var(--light);
+    box-shadow: 0 4px 8px 0 #252323;
+}
+#section-explore .card-content{
+    padding: 2em;
+}
+#section-explore p{
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+/* NEWS SECTION */
+#section-news {
+    padding: 1em 1em 1em;
+    background-color: var(--light);
+}
+
+#section-news .section-title{
+    color: var(--dark);
+    text-align: center; 
+    font-weight: 600;
+    font-family: IndieFlower;
+    font-size: 25px;
+}
+#section-news .card-title{
+    color: var(--yellow);
+    text-align: center;
+}
+#section-news ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#section-news li{
+    margin-bottom: 1em;
+    background: var(--blue);
+    color: var(--light);
+    box-shadow: 0 4px 8px 0 #252323;
+}
+#section-news .card-content{
+    padding: 2em;
+}
+#section-news p{
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+/* INFO SECTION */
+#section-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 #252323;
+}
+#section-info .content-image{
+    height: 300px;
+    width: 100%;
+    background: url("../images/exhibition.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#section-info .content-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--silver);
+}
+#section-info .content-title{
+    font-family: IndieFlower;
+    font-size: 30px;
+    text-align: center;
+
+}
+#section-info .content-text{
+    margin: 60px 45px 55px;
+    color: var(--dark);
+}
+#section-info p{
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#section-info img{
+    height: 300px;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    color: var(--light);
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--light);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.f-main {
+    background-color: var(--lighterdark);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.f-main-item {
+    padding: 20px;
+    min-width: 200px;
+}
+
+.f-main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.f-main input[type="email"] {
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    border: 0;
+}
+.f-main input[type="submit"] {
+    background-color: var(--blue);
+    color: var(--yellow);
+    cursor: pointer;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+    border: 0;
+}
+.f-main input[type="submit"]:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+.f-copyright {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+
+}
+/* EXHIBITION PAGE */
+/* BANNER */
+#e-banner {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark) url("../images/exhibit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    border-bottom: 3px solid var(--silver);
+}
+#e-banner h1{
+    font-weight: bold;
+    font-family: IndieFlower;
+    font-size: 45px;
+    color: var(--yellow);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+}
+
+/* EXHIBITION SECTION */
+#section-exhibition {
+    padding: 1em 1em 1em;
+    background-color: var(--light);
+}
+
+#section-exhibition .section-title{
+    color: var(--dark);
+    text-align: center;
+    font-weight: 600;
+    font-family: IndieFlower;
+    font-size: 25px;
+}
+
+#section-exhibition .card-title{
+    color: var(--yellow);
+    text-align: center;
+}
+#section-exhibition ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#section-exhibition li{
+    margin-bottom: 1em;
+    background: var(--blue);
+    color: var(--light);
+    box-shadow: 0 4px 8px 0 #252323;
+}
+#section-exhibition .card-content{
+    padding: 2em;
+}
+#section-exhibition p{
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+/* VISIT US PAGE */
+/* BANNER */
+#v-banner {
+    position: relative;
+    background: var(--dark) url("../images/museum.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 400px;
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    border-bottom: 3px solid var(--silver);
+}
+#v-banner h1{
+    font-weight: bold;
+    font-family: IndieFlower;
+    font-size: 45px;
+    color: var(--yellow);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+}
+#section-visit {
+    color: var(--dark);
+    padding: 2em;
+}
+#section-visit h2 {
+    text-align: center;
+    font-size: 35px;
+}
+#section-visit h3 {
+    font-size: 30px;
+}
+#section-visit p {
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#section-visit ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* GET INVOLED PAGE */
+/* BANNER */
+#i-banner {
+    position: relative;
+    background: var(--dark) url("../images/woman-sitting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 400px;
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    border-bottom: 3px solid var(--silver);
+}
+#i-banner h1{
+    font-weight: bold;
+    font-family: IndieFlower;
+    font-size: 45px;
+    color: var(--yellow);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+}
+
+#section-involed {
+    color: var(--dark);
+    padding: 2em;
+}
+#section-involed h3 {
+    font-size: 30px;
+}
+#section-involed p {
+    padding: 0;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+@media (min-width:1024px) {
+    /* LOGO */
+    .logo-image{
+        width: 200px;
+    }
+    /* NAVIGATION BAR */
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-links ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-links {
+        display: block;
+        height: 100%;
+    }
+    .navbar-links li a {
+        padding: 1rem 4rem;
+        border-bottom: 0px solid var(--silver);
+    }
+    .navbar-links li:hover{
+        text-decoration: underline;
+    }    
+    label {
+        display: none;
+    }
+    #toggle {
+        display: none;
+    }
+
+    /* BANNER */
+    #banner {
+        height: 500px;
+    }
+    #banner h1{
+        font-size: 85px;
+    }
+    #banner p{
+        font-size: 35px;
+    }
+
+    /* FOOTER */
+    .f-main {
+        justify-content: space-evenly;
+    }
+
+    /* EXPLORE SECTION */
+    #section-explore ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-explore li {
+        width: 32%;
+    }
+
+    /* NEWS SECTION */
+    #section-news ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-news li {
+        width: 32%;
+    }
+
+    /* INFO SECTION */
+    #section-info .content-wrap{
+        flex-direction: row;
+        width: 100%;
+    }
+    #section-info .content-image{
+        height: 700px;
+    }
+    #section-info .content-text{
+        margin: 0 60px;
+        max-width: 660px;    
+    }
+
+    /* EXHIBITION PAGE */
+    /* BANNER */
+    #e-banner {
+        height: 500px;
+    }
+    #e-banner h1{
+        font-size: 85px;
+    }
+    #section-exhibition ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #section-exhibition li {
+        flex-basis: calc(33% - 20px);
+    }
+    
+    /* ABOUT US PAGE */
+    /* BANNER */
+    #v-banner {
+        height: 500px;
+    }
+    #v-banner h1{
+        font-size: 85px;
+    }
+    
+    /* GET INVOLED PAGE */
+    /* BANNER */
+    #i-banner {
+        height: 500px;
+    }
+    #i-banner h1{
+        font-size: 85px;
+    }
+}
