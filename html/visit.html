@@ -1,124 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Community Science Museum - About Us</title>
+    <title>Community Science Museum - Visit Us</title>
 </head>
 
-    <body>
-        <article>
-            <!-- Navigation Bar -->
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="../images/CSM-Logo.svg" class="logo-image">
+<body>
+    <article>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../images/CSM-Logo.svg" class="logo-image"></a>
+            </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="navbar-links">
+                <ul>
+                    <li id="link1"><a href="../html/index.html">Home</a></li>
+                    <li id="link2"><a href="../html/exhibition.html">Exhibition</a></li>
+                    <li id="link3"><a class="active3" href="../html/visit.html">Visit</a></li>
+                    <li id="link4"><a href="../html/involed.html">Get Involed</a></li>
+                    <li id="link5"><a href="../html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <header id="v-banner">
+            <div class="content-wrap">
+                <h1>Visit Us</h1>
+                <ul class="breadcrumb">
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/visit.html">Visit Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- Visit Us Section -->
+            <section id="section-visit">
+                <div class="content-wrap">
+                    <h3>Location</h3>
+                    <p>The museum is located at Museumsveien 17, 1807 Askim.</p>
+
+                    <h3>Admission</h3>
+                    <p>The entrance is free for all.</p>
+                    <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and
+                        include a handy printed guide of the museum.</p>
+                    <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us
+                        to arrange the tour.</p>
+
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tuesday: 10:00 - 16:00</li>
+                        <li>Wednesday: 10:00 - 16:00</li>
+                        <li>Thursday: 10:00 - 16:00</li>
+                        <li>Friday: 10:00 - 19:00</li>
+                        <li>Saturday: 09:00 - 16:00</li>
+                        <li>Sunday: 09:00 - 13:00</li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs
+                        for the visually impaired.</p>
+
+                    <h3>Food and drink</h3>
+                    <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee,
+                        snacks and more.</p>
+
+                    <h3>Shop</h3>
+                    <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs
+                        that allow you to continue to explore science even after you’ve left the museum.</p>
                 </div>
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle"/>    
-                <div class="navbar-links">
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- Footer Main -->
+            <section class="f-main">
+
+                <!-- Footer Main Shortcuts-->
+                <div class="f-main-item">
+                    <h2 class="f-title">Shortcuts</h2>
                     <ul>
                         <li><a href="../html/index.html">Home</a></li>
                         <li><a href="../html/exhibition.html">Exhibition</a></li>
                         <li><a href="../html/visit.html">Visit</a></li>
                         <li><a href="../html/involed.html">Get Involed</a></li>
+                        <li><a href="../html/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-            </nav>
-            
-            <!-- Banner -->
-            <header id="v-banner">
-                    <div class="content-wrap">
-                        <h1>Visit Us</h1>
-                    </div>
-            </header>
 
-            <main>
-                
-                <!-- Visit Us Section -->
-                <section id="section-visit">
-                        <div class="content-wrap">
-                          <h3>Location</h3>
-                          <p>The museum is located at Museumsveien 17, 1807 Askim..</p>
+                <!-- Footer Main Opening Hours-->
+                <div class="f-main-item">
+                    <h2 class="f-title">Hours</h2>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tuesday: 10:00 - 16:00</li>
+                        <li>Wednesday: 10:00 - 16:00</li>
+                        <li>Thursday: 10:00 - 16:00</li>
+                        <li>Friday: 10:00 - 19:00</li>
+                        <li>Saturday: 09:00 - 16:00</li>
+                        <li>Sunday: 09:00 - 13:00</li>
+                    </ul>
+                </div>
 
-                          <h3>Admission</h3>
-                          <p>The entrance is free for all.</p>
-                          <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
-                          <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+                <!-- Footer Main Newsletter-->
+                <div class="f-main-item">
+                    <h2 class="f-title">Stay Updated!</h2>
+                    <p>Subscribe to our newsletter for latest news and events!</p>
+                    <form>
+                        <input type="email" name="email" placeholder="Your e-mail address">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
 
-                          <h3>Hours</h3>
-                          <ul>
-                                <li>Monday: Closed</li>
-                                <li>Tuesday: 10:00 - 16:00</li>
-                                <li>Wednesday: 10:00 - 16:00</li>
-                                <li>Thursday: 10:00 - 16:00</li>
-                                <li>Friday: 10:00 - 19:00</li>
-                                <li>Saturday: 09:00 - 16:00</li>
-                                <li>Sunday: 09:00 - 13:00</li>
-                            </ul>
+            </section>
 
-                            <h3>Accessibility</h3>
-                            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+            <!-- Footer copyright -->
+            <section class="f-copyright">
+                <p>&copy; 2019 Copyright Community Science Museum</p>
+            </section>
+        </footer>
 
-                            <h3>Food and drink</h3>
-                            <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+    </article>
 
-                            <h3>Shop</h3>
-                            <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
-                        </div>
-                </section>
+    <script src="../js/script.js"></script>
 
-            </main>
+</body>
 
-            <footer>
-                    <!-- Footer Main -->
-                    <section class="f-main">
-    
-                    <!-- Footer Main Shortcuts-->
-                        <div class="f-main-item">
-                        <h2 class="f-title">Shortcuts</h2>
-                            <ul>
-                                <li><a href="../html/index.html">Home</a></li>
-                                <li><a href="../html/exhibition.html">Exhibition</a></li>
-                                <li><a href="../html/visit.html">Visit</a></li>
-                                <li><a href="../html/involed.html">Get Involed</a></li>
-                            </ul>
-                        </div>
-    
-                    <!-- Footer Main Opening Hours-->
-                        <div class="f-main-item">
-                        <h2 class="f-title">Hours</h2>
-                            <ul>
-                                <li>Monday:     Closed</li>
-                                <li>Tuesday:        10:00 - 16:00</li>
-                                <li>Wednesday:      110:00 - 16:00</li>
-                                <li>Thursday:       10:00 - 16:00</li>
-                                <li>Friday:     10:00 - 19:00</li>
-                                <li>Saturday:       09:00 - 16:00</li>
-                                <li>Sunday:     09:00 - 13:00</li>
-                            </ul>
-                        </div>
-                    
-                    <!-- Footer Main Newsletter-->
-                        <div class="f-main-item">
-                        <h2 class="f-title">Stay Updated!</h2>
-                            <p>Subscribe to our newsletter for latest news and events!</p>
-                            <form>
-                              <input type="email" name="email" placeholder="Your e-mail address">
-                              <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-    
-                    </section>
-    
-                    <!-- Footer copyright -->
-                    <section class="f-copyright">
-                        <p>&copy; 2019 Copyright Community Science Museum</p>
-                    </section>
-                </footer>
-
-        </article>
-    </body>
 </html>
-	
